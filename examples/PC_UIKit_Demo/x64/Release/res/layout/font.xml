@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+    <Font id="0" name="微软雅黑" size="9" bold="false" default="true"/>
+    <Font id="1" name="微软雅黑" size="14" bold="true" />
+    <Font id="2" name="微软雅黑" size="20" bold="false" />
+</Window>

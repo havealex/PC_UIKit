@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Window caption="0,0,0,32" size="1024, 640" showshadow="true" shadowimage="drawable/img_shadow_bk.png" shadowcorner="54,30,54,78">
+<Include source="layout/font.xml"/>
+    <VerticalLayout>
+        <HorizontalLayout>
+            <VerticalLayout bkcolor="#ffeeeeee" width="200">
+                <HorizontalLayout height="214"/>
+                <VerticalLayout name="menuPanel">
+                    <HorizontalLayout height="36">
+                        <HorizontalLayout width="16"/>
+                        <Option name="quickStartMenu" height="36"
+                          borderround="16,16" width="168"
+                          group="menuTitle"  selected="true" text="快速入门"
+                          font="1" align="left" valign="vcenter" textpadding="40,6,8,6" endellipsis="true" textcolor="#FF333333" hottextcolor="#FF333333" selectedtextcolor="#FF0A59F7"
+                          hotbkcolor="#0C000000"  selectedbkcolor="#190A59F7" pushedbkcolor="#19000000" selectedfont="1"
+                          normalimage=" file='drawable/ic_quickstart_normal.png' reverse='true' dest='8,6,32,30'"
+                          hotimage=" file='drawable/ic_quickstart_normal.png' reverse='true' dest='8,6,32,30'"
+                          pushedimage=" file='drawable/ic_quickstart_normal.png' reverse='true' dest='8,6,32,30'"
+                          selectedimage=" file='drawable/ic_quickstart_hover.png' reverse='true' dest='8,6,32,30'"/>
+                        <HorizontalLayout width="16"/>
+                    </HorizontalLayout>
+                    <Control height="5"/>
+                    <HorizontalLayout height="36">
+                        <HorizontalLayout width="16"/>
+                        <Option name="AboutMenu" height="36"
+                          borderround="16,16" width="168"
+                          group="menuTitle" text="更多"
+                          font="1" align="left" valign="vcenter" textpadding="40,6,8,6" endellipsis="true" textcolor="#FF333333" hottextcolor="#FF333333" selectedtextcolor="#FF0A59F7"
+                          hotbkcolor="#0C000000"  selectedbkcolor="#190A59F7" pushedbkcolor="#19000000" selectedfont="1"
+                          normalimage=" file='drawable/ic_search_normal.png' reverse='true' dest='8,6,32,30'"
+                          hotimage=" file='drawable/ic_search_normal.png' reverse='true' dest='8,6,32,30'"
+                          pushedimage=" file='drawable/ic_search_normal.png' reverse='true' dest='8,6,32,30'"
+                          selectedimage=" file='drawable/ic_search_hover.png' reverse='true' dest='8,6,32,30'"/>
+                        <HorizontalLayout width="16"/>
+                    </HorizontalLayout>
+                </VerticalLayout>
+            </VerticalLayout>
+            <TabLayout name="tabContainer" bkcolor="#fffcfcfc">
+                <HorizontalLayout>
+                    <Text align="center" valign="vcenter" font="2" text="欢迎使用PC_UIKit!"/>
+                </HorizontalLayout>
+                <HorizontalLayout>
+                    <Text align="center" valign="vcenter" font="2" text="更多关于PC_UIKit新特性，敬请期待!"/>
+                </HorizontalLayout>
+            </TabLayout>
+        </HorizontalLayout>
+
+        <HorizontalLayout float="true" pos="200,0,1024,32">
+            <HorizontalLayout/>
+            <Button name="minbtn" width="48" height="32" tooltip="最小化"
+              normalimage="file='drawable/ic_min_normal.png'"
+              hotimage="file='drawable/ic_min_hover.png'"
+              pushedimage="file='drawable/ic_min_pressed.png'" IsNcHit="false"/>
+            <Button name="closebtn" width="48" height="32" tooltip="关闭"
+              normalimage="file='drawable/ic_close_normal.png'"
+              hotimage="file='drawable/ic_close_hover.png'"
+              pushedimage="file='drawable/ic_close_pressed.png'" IsNcHit="false"/>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>
